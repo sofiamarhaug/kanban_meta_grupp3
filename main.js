@@ -19,3 +19,4 @@ kanbanboardDoing = document.getElementById('Doing'),
 kanbanboardTest = document.getElementById('Test'),
 kanbanboardDone = document.getElementById('Done')
 }
+export { global };
