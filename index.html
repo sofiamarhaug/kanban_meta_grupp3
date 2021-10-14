@@ -8,38 +8,37 @@
     <script type="module" src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    Kanban Meta 3
-    <form id="loginform">
-        <input type="text" id="username" placeholder="Användarnamn"/><br>
-        <input type="password" id="password" placeholder="Lösenord"><br>
-        <button id="loginBtn">Logga in</button>
-    </form>
-    <form>
-        <button id="logoutBtn">Logga ut</button>
-    </form>
-</header>
-
 <body>
-<div class="kanbanboard">
-    Välkommen till Kanban Meta 3!
-    <div id="Todo" class="kanbanitem">
+    <header>
+        Kanban Meta 3
+        <form id="loginform">
+            <input type="text" id="username" placeholder="Användarnamn"/><br>
+            <input type="password" id="password" placeholder="Lösenord"><br>
+            <button id="loginBtn">Logga in</button>
+        </form>
+        <form>
+            <button id="logoutBtn">Logga ut</button>
+        </form>
+    </header>
+<div class="kanbanBoard">
+    <div id="Todo" class="kanbanColumn">
         <h2>Todo</h2>
         <button id="todoBtn">Lägg till ett kort</button>       
     </div>
-    <div id="Doing" class="kanbanitem">
+    <div id="Doing" class="kanbanColumn">
         <h2>Doing</h2>
         <button id="doingBtn">Lägg till ett kort</button>           
     </div>
-    <div id="Test" class="kanbanitem">
+    <div id="Test" class="kanbanColumn">
         <h2>Test</h2>
         <button id="testBtn">Lägg till ett kort</button>           
     </div>
-    <div id="Done" class="kanbanitem">
+    <div id="Done" class="kanbanColumn">
         <h2>Done</h2>
         <button id="doneBtn">Lägg till ett kort</button>           
     </div>
 </div>    
+<div id="wrongCredentials">Felaktigt användarnamn eller lösenord</div>
 </body>
 <footer>
 ©2021 Kanban Meta 3 - WU21    
