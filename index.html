@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
+    Kanban Meta 3
     <form id="loginform">
         <input type="text" id="username" placeholder="Användarnamn"/><br>
         <input type="password" id="password" placeholder="Lösenord"><br>
@@ -22,13 +23,21 @@
 <body>
 <div class="kanbanboard">
     Välkommen till Kanban Meta 3!
-    <div id="Todo">       
+    <div id="Todo" class="kanbanitem">
+        <h2>Todo</h2>
+        <button id="todoBtn">Lägg till ett kort</button>       
     </div>
-    <div id="Doing">       
+    <div id="Doing" class="kanbanitem">
+        <h2>Doing</h2>
+        <button id="doingBtn">Lägg till ett kort</button>           
     </div>
-    <div id="Test">       
+    <div id="Test" class="kanbanitem">
+        <h2>Test</h2>
+        <button id="testBtn">Lägg till ett kort</button>           
     </div>
-    <div id="Done">       
+    <div id="Done" class="kanbanitem">
+        <h2>Done</h2>
+        <button id="doneBtn">Lägg till ett kort</button>           
     </div>
 </div>    
 </body>

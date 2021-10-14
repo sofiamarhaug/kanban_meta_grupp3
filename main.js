@@ -17,6 +17,14 @@ kanbanboardClass = document.getElementById('kanbanboard'),
 kanbanboardTodo = document.getElementById('Todo'),
 kanbanboardDoing = document.getElementById('Doing'),
 kanbanboardTest = document.getElementById('Test'),
-kanbanboardDone = document.getElementById('Done')
+kanbanboardDone = document.getElementById('Done'),
+todoBtn = document.getElementById('todoBtn'),
+doingBtn = document.getElementById('doingBtn'),
+testBtn = document.getElementById('testBtn'),
+doneBtn = document.getElementById('doneBtn')
 }
 export { global };
+
+// Cards cointainer
+let allCards = [];
+export { allCards };
