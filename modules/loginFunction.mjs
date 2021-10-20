@@ -1,31 +1,28 @@
 import { loginTrue } from './checkLoginStaus.mjs';
-import { global } from '../main.js';
-import { printExistingCard } from './printCards.mjs';
 
-
-
-
-export function loginFunction(){
+export function loginFunction() {
     var getUser = document.getElementById("username").value;
     var getPass = document.getElementById("password").value;
 
     fetch("inloggningsuppgifter.json")
 
-        .then(function(response){
+        .then(function (response) {
             return response.json();
         })
-        .then(function(json){
-            for (i=0; i<JSON.lenght; i++) {  
-                if (getUser == json[i].username && getPass == json[i].password){
+        .then(function (json) {
+            let newarray = json;
+            newarray.forEach((data) => {
+                if (data.username === getUser && data.password === getPass) {
                     localStorage.setItem("currentUser", getUser);
                     loginTrue();
-                }else{
-                    global.wrongCredentials.style.display = "block";
                 }
-            }
-      
-        }) 
-       
+                else if (data.username !== getUser && data.password !== getPass){
+                    alert('Felaktigt användarnamn eller lösenord');
+                    for (let i = 0; i < array.length; i++) {
+                        if (array[i] === 2) 
+                          continue;
+                      }
+                }
+            })
+        })
 };
-
-
